@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
 
     public GameObject playerPrefab;
     public GameObject enemyOnePrefab;
+    public GameObject enemyTwoLWPrefab;
     public GameObject cloudPrefab;
 
     public TextMeshProUGUI livesText;
@@ -38,6 +39,7 @@ public class GameManager : MonoBehaviour
     void CreateEnemy()
     {
         Instantiate(enemyOnePrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize) * 0.9f, verticalScreenSize, 0), Quaternion.Euler(180, 0, 0));
+        Instantiate(enemyTwoLWPrefab, new Vector3(horizontalScreenSize, Random.Range(-verticalScreenSize, verticalScreenSize) * 0.9f, 0), Quaternion.Euler(180, 0, 90));
     }
 
     void CreateSky()
