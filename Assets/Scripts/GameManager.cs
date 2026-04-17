@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     {
         if (gameOver && Input.GetKeyDown(KeyCode.R))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene("Game");
         }
     }
 
