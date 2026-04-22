@@ -128,6 +128,7 @@ public class GameManager : MonoBehaviour
     public void AddScore(int earnedScore)
     {
         score = score + earnedScore;
+        scoreText.text = "Score: " + score;
     }
 
     public void ChangeLivesText (int currentLives)
