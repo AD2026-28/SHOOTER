@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4068299083688096018}
   - component: {fileID: 7477482547397111738}
   - component: {fileID: 6656250228348305841}
+  - component: {fileID: 7981085988110377951}
   m_Layer: 0
-  m_Name: Coin
-  m_TagString: PowerUp
+  m_Name: CoinAD
+  m_TagString: Coin
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -165,3 +166,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &7981085988110377951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8901978872678414076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93960515254f8d74687c263c64c5300a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SelfDestroyer
+  destructionTime: 5.5

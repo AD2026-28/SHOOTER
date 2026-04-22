@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour
         gameManager.PlaySound(2);
         gameManager.ManagePowerupText(5);
     }
+
     IEnumerator SpeedPowerDown()
     {
         yield return new WaitForSeconds(5);
@@ -80,6 +81,7 @@ public class PlayerController : MonoBehaviour
         gameManager.PlaySound(2);
         gameManager.ManagePowerupText(5);
     }
+
     IEnumerator WeaponPowerDown()
     {
         yield return new WaitForSeconds(5);
@@ -129,6 +131,13 @@ public class PlayerController : MonoBehaviour
                     break;
             }
 
+        }
+
+        if (whatDitIHit.tag == "Coin")
+        {
+            Destroy(whatDitIHit.gameObject);
+            gameManager.PlaySound(3);
+            gameManager.AddScore(1);
         }
     }
 
